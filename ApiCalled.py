@@ -1,6 +1,9 @@
-
+import os
 import requests
-API_KEY = ""
+from dotenv import load_dotenv
+load_dotenv()
+
+API_KEY = os.getenv('API_KEY')
 api_url = "http://192.168.1.16/api"
 
 auth_header = {'X-Api-Key': API_KEY}
